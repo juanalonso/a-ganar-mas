@@ -5,12 +5,11 @@
 	ini_set('display_errors', 1);
 	error_reporting(-1);
 
-
-	$charset = "anagramas";
+	$charset = isset($argv[1]) ? $argv[1] : "anagramas";
 	$charsetFreqs = getFrequencyArray($charset);
 	$charsetLen = strlen($charset);
 
-	$dictionaryFull = file("lemario-general-del-espanol.txt", FILE_IGNORE_NEW_LINES);
+	$dictionaryFull = file("wordlist.txt", FILE_IGNORE_NEW_LINES);
 	$dictionary = array();
 
 
