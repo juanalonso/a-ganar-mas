@@ -1,5 +1,9 @@
 <?php
 
+	//wordlist is a combination of olea's lemario-general-del-espanol.txt & 
+    //verbos-espanol-conjugaciones.txt (https://github.com/olea/lemarios) and 
+    //Faisal Ali's Hunspell generator (https://github.com/SyedFaisalAli/HunspellToJSON)
+
 	ini_set('memory_limit', '512M');
 	ini_set('display_startup_errors', 1);
 	ini_set('display_errors', 1);
